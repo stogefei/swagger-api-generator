@@ -41,6 +41,4 @@
     打印 console.log(API, "API")
     api-demo.gif
 
- ![img]('./api-demo.gif'）
-
- <iframe height=500 width=500 src="./api-demo.gif">
+ ![例子](https://raw.githubusercontent.com/stogefei/swagger-api-generator/master/api-demo.gif）
