@@ -5,8 +5,8 @@
 ##### Notice
 
     1.此工具目前只是使用部分
-    2.详细使用见下面链接
-    [语雀文档](https://www.yuque.com/docs/share/55c674a1-2e1b-4bdf-baad-5e08a1a0feb7?#TypeScriptofSwaggerApi)
+    2.详细使用见下面
+![例子](https://raw.githubusercontent.com/stogefei/swagger-api-generator/master/api-demo.gif）
     
 ##### Other
 
