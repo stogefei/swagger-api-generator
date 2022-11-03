@@ -5,7 +5,7 @@
 ##### Notice
 
     1.swagger文档
-![例子](https://raw.githubusercontent.com/stogefei/swagger-api-generator/master/swagger.jpeg)
+![例子](https://raw.githubusercontent.com/stogefei/swagger-api-generator/master/swag.jpeg)
 
     2.构建后使用方式
 ![例子](https://raw.githubusercontent.com/stogefei/swagger-api-generator/master/api-demo.gif)
