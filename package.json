@@ -10,6 +10,11 @@
     "build:core": "cd ./packages/api-swag-core && yarn run build",
     "build:doc": "cd ./packages/api-swag-core && yarn run build:doc"
   },
+  "author": "zhuaofei",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stogefei/swagger-api-generator.git"
+  },
   "workspaces": [
     "packages/*"
   ],

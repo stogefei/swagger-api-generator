@@ -2,5 +2,33 @@
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "useWorkspaces": true,
   "version": "2.0.0",
-  "npmClient": "yarn"
+  "npmClient": "yarn",
+  "command": {
+    "publish": {
+      "message": "ci(publish): lerna publish %s",
+      "registry": "https://www.npmjs.com/"
+    },
+    "version": {
+      "includeMergedTags": true,
+      "allowBranch": [
+        "master"
+      ],
+      "push": false,
+      "changelog": false,
+      "ignoreChanges": [
+        "build/",
+        "docs/",
+        "*.md",
+        "**/__tests__/**",
+        "**/test/unit/**/*.spec.(js|jsx|ts|tsx)",
+        "**/__tests__/*.(js|jsx|ts|tsx)",
+        "**/*.md",
+        "**/dist",
+        ".gitlab/",
+        "test/",
+        "lerna.json"
+      ],
+      "message": "ci(publish): lerna version %s"
+    }
+  }
 }
