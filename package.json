@@ -4,6 +4,7 @@
   "scripts": {
     "bootstrap": "npx lerna bootstrap",
     "changed": "lerna changed",
+    "cz": "npx git-cz",
     "clean": "lerna clean",
     "build:api": "cd ./packages/api-generator && yarn run dev",
     "dev:demo": "cd ./packages/demo && yarn run serve",
