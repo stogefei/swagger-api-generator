@@ -41,4 +41,4 @@
     打印 console.log(API, "API")
     api-demo.gif
 
- ![例子](https://raw.githubusercontent.com/stogefei/swagger-api-generator/master/api-demo.gif）
+ ![例子](https://raw.githubusercontent.com/stogefei/swagger-api-generator/master/api-demo.gif)
