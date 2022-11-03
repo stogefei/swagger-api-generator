@@ -1,0 +1,26 @@
+/* eslint-disable */
+import {AxiosInterceptorManager, AxiosRequestConfig, AxiosResponse} from 'axios'
+interface Interceptors {
+    request: AxiosInterceptorManager<AxiosRequestConfig>
+    response: AxiosInterceptorManager<AxiosResponse>
+}
+ <% apiData.Controllers.forEach( c => {%>
+import {<%=c.upperName%>} from './<%=c.Name%>'; // <%=c.Description%>
+<% })%>
+declare interface API {
+    requestInstance: Request; // 请求实例
+
+    addInterceptors: Interceptors; // 添加新的拦截器
+
+    Global: {
+        request: (options: any) => Promise<any>;
+    };
+
+    register: (apiService: string) => any;
+
+    mockMode: (enable?: boolean) => void;
+
+<%apiData.Controllers.forEach(c => {%>
+    <%=c.upperName%>: <%=c.upperName%>;
+<% })%>
+}

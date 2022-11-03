@@ -1,0 +1,31 @@
+{
+  "name": "swagger-api-generator",
+  "private": true,
+  "scripts": {
+    "bootstrap": "npx lerna bootstrap",
+    "changed": "lerna changed",
+    "clean": "lerna clean",
+    "build:api": "cd ./packages/api-generator && yarn run dev",
+    "dev:demo": "cd ./packages/demo && yarn run serve",
+    "build:core": "cd ./packages/api-swag-core && yarn run build",
+    "build:doc": "cd ./packages/api-swag-core && yarn run build:doc"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/lodash": "^4.14.187",
+    "@types/node": "^18.11.9",
+    "@types/qs": "^6.9.7",
+    "@types/ejs": "^3.1.1",
+    "axios": "^1.1.3",
+    "lerna": "^6.0.1",
+    "lodash": "^4.17.21",
+    "qs": "^6.11.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typedoc": "^0.23.19",
+    "typescript": "^4.8.4",
+    "cross-env": "^7.0.3"
+  }
+}

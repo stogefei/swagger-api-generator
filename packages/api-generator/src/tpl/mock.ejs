@@ -1,0 +1,12 @@
+/* eslint-disable */
+// @ts-ignore
+import Mock from 'mockjs';
+<% apiData.Controllers.forEach(c => {%>
+import <%=c.upperName%> from './<%=c.Name%>';<% }) %>
+
+Mock.setup({
+  timeout: '350-1000',
+});
+<%apiData.Controllers.forEach(c => {%><% c.Methods.forEach( m => {%>
+Mock.mock(<%-'/' + m.Url.replace(/\//g, '\\/') + '/'%>, '<%=m.RequestName%>', <%=c.upperName%>.<%=m.Name%>);<%})%>
+<%})%>

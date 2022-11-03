@@ -1,0 +1,38 @@
+/* eslint-disable */
+import Request from './request';
+import {AxiosInterceptorManager, AxiosRequestConfig, AxiosResponse} from 'axios'
+interface Interceptors {
+  request: AxiosInterceptorManager<AxiosRequestConfig>
+  response: AxiosInterceptorManager<AxiosResponse>
+}
+<% apiData.Controllers.forEach( c => {%>
+import {<%=c.upperName%>} from '../api/api-control/<%=c.Name%>'; // <%=c.Description%>
+<% })%>
+export default class API {
+  requestInstance: Request; // 请求实例
+
+  addInterceptors: Interceptors; // 添加新的拦截器
+
+  constructor(baseUrl: string) {
+    this.requestInstance = new Request(baseUrl)
+    this.addInterceptors = {
+      request: this.requestInstance.interceptors.request,
+      response: this.requestInstance.interceptors.response,
+    }
+  }
+
+  // 定义常量方法
+  Global = {
+    request: (options: AxiosRequestConfig) => this.requestInstance.instance.request(options)
+  }
+
+  mockMode = true
+
+  register = {
+    request: () => {},
+  }
+
+  <%apiData.Controllers.forEach(c => {%>
+  <%=c.upperName%> = new <%=c.upperName%>()
+  <% })%>
+}

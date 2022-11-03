@@ -1,0 +1,167 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+/* eslint-disable */
+var request_1 = require("./request");
+var bizDataSourceController_1 = require("../api/api-control/bizDataSourceController"); // biz-data-source-controller
+var bizServiceCategroyController_1 = require("../api/api-control/bizServiceCategroyController"); // biz-service-categroy-controller
+var bizServiceController_1 = require("../api/api-control/bizServiceController"); // biz-service-controller
+var bizServiceMethodController_1 = require("../api/api-control/bizServiceMethodController"); // biz-service-method-controller
+var formDesignController_1 = require("../api/api-control/formDesignController"); // form-design-controller
+var formTemplateController_1 = require("../api/api-control/formTemplateController"); // form-template-controller
+var licenseController_1 = require("../api/api-control/licenseController"); // license-controller
+var appPackageController_1 = require("../api/api-control/appPackageController"); // app-package-controller
+var appPermissionController_1 = require("../api/api-control/appPermissionController"); // app-permission-controller
+var bizRuleController_1 = require("../api/api-control/bizRuleController"); // biz-rule-controller
+var modelFunTreeController_1 = require("../api/api-control/modelFunTreeController"); // model-fun-tree-controller
+var bizMenuController_1 = require("../api/api-control/bizMenuController"); // biz-menu-controller
+var bizSchemaController_1 = require("../api/api-control/bizSchemaController"); // biz-schema-controller
+var bizSchemaEventController_1 = require("../api/api-control/bizSchemaEventController"); // biz-schema-event-controller
+var bizPropertyFormulaController_1 = require("../api/api-control/bizPropertyFormulaController"); // biz-property-formula-controller
+var bizPropertyController_1 = require("../api/api-control/bizPropertyController"); // biz-property-controller
+var bizViewController_1 = require("../api/api-control/bizViewController"); // biz-view-controller
+var workflowDesignController_1 = require("../api/api-control/workflowDesignController"); // workflow-design-controller
+var organizationController_1 = require("../api/api-control/organizationController"); // organization-controller
+var departmentController_1 = require("../api/api-control/departmentController"); // department-controller
+var tagController_1 = require("../api/api-control/tagController"); // tag-controller
+var adminUnitTreeController_1 = require("../api/api-control/adminUnitTreeController"); // admin-unit-tree-controller
+var userController_1 = require("../api/api-control/userController"); // user-controller
+var userBizController_1 = require("../api/api-control/userBizController"); // user-biz-controller
+var adminController_1 = require("../api/api-control/adminController"); // admin-controller
+var adminRoleController_1 = require("../api/api-control/adminRoleController"); // admin-role-controller
+var advancedDataSourceController_1 = require("../api/api-control/advancedDataSourceController"); // advanced-data-source-controller
+var chartController_1 = require("../api/api-control/chartController"); // chart-controller
+var dashboardController_1 = require("../api/api-control/dashboardController"); // dashboard-controller
+var reportDataSourceController_1 = require("../api/api-control/reportDataSourceController"); // report-data-source-controller
+var olapController_1 = require("../api/api-control/olapController"); // olap-controller
+var schedulerController_1 = require("../api/api-control/schedulerController"); // scheduler-controller
+var sysDictController_1 = require("../api/api-control/sysDictController"); // sys-dict-controller
+var sysLogController_1 = require("../api/api-control/sysLogController"); // sys-log-controller
+var sysParamsController_1 = require("../api/api-control/sysParamsController"); // sys-params-controller
+var securityClientController_1 = require("../api/api-control/securityClientController"); // security-client-controller
+var loginController_1 = require("../api/api-control/loginController"); // login-controller
+var documentFileController_1 = require("../api/api-control/documentFileController"); // document-file-controller
+var excelController_1 = require("../api/api-control/excelController"); // excel-controller
+var authController_1 = require("../api/api-control/authController"); // auth-controller
+var organizationOpenApi_1 = require("../api/api-control/organizationOpenApi"); // organization-open-api
+var formRuntimeOpenApi_1 = require("../api/api-control/formRuntimeOpenApi"); // form-runtime-open-api
+var instanceRuntimeOpenApi_1 = require("../api/api-control/instanceRuntimeOpenApi"); // instance-runtime-open-api
+var workflowRuntimeOpenApi_1 = require("../api/api-control/workflowRuntimeOpenApi"); // workflow-runtime-open-api
+var workItemRuntimeOpenApi_1 = require("../api/api-control/workItemRuntimeOpenApi"); // work-item-runtime-open-api
+var appController_1 = require("../api/api-control/appController"); // app-controller
+var bizObjectController_1 = require("../api/api-control/bizObjectController"); // biz-object-controller
+var formCommentController_1 = require("../api/api-control/formCommentController"); // form-comment-controller
+var portalFormTemplateController_1 = require("../api/api-control/portalFormTemplateController"); // portal-form-template-controller
+var jsSignController_1 = require("../api/api-control/jsSignController"); // js-sign-controller
+var messageController_1 = require("../api/api-control/messageController"); // message-controller
+var portalModelFunTreeController_1 = require("../api/api-control/portalModelFunTreeController"); // portal-model-fun-tree-controller
+var olapRuntimeController_1 = require("../api/api-control/olapRuntimeController"); // olap-runtime-controller
+var externalController_1 = require("../api/api-control/externalController"); // external-controller
+var formRuntimeController_1 = require("../api/api-control/formRuntimeController"); // form-runtime-controller
+var instanceRuntimeController_1 = require("../api/api-control/instanceRuntimeController"); // instance-runtime-controller
+var workflowRuntimeController_1 = require("../api/api-control/workflowRuntimeController"); // workflow-runtime-controller
+var workItemRuntimeController_1 = require("../api/api-control/workItemRuntimeController"); // work-item-runtime-controller
+var bizServerInvokeController_1 = require("../api/api-control/bizServerInvokeController"); // biz-server-invoke-controller
+var portalSysDictController_1 = require("../api/api-control/portalSysDictController"); // portal-sys-dict-controller
+var portalUnitController_1 = require("../api/api-control/portalUnitController"); // portal-unit-controller
+var portalUnitTreeController_1 = require("../api/api-control/portalUnitTreeController"); // portal-unit-tree-controller
+var portalUserBizController_1 = require("../api/api-control/portalUserBizController"); // portal-user-biz-controller
+var appViewController_1 = require("../api/api-control/appViewController"); // app-view-controller
+var workbenchController_1 = require("../api/api-control/workbenchController"); // workbench-controller
+var quickLinkController_1 = require("../api/api-control/quickLinkController"); // quick-link-controller
+var workflowDelegateController_1 = require("../api/api-control/workflowDelegateController"); // workflow-delegate-controller
+var shortLinkController_1 = require("../api/api-control/shortLinkController"); // short-link-controller
+var idGeneratorController_1 = require("../api/api-control/idGeneratorController"); // id-generator-controller
+var securityController_1 = require("../api/api-control/securityController"); // security-controller
+var notifyController_1 = require("../api/api-control/notifyController"); // notify-controller
+var API = /** @class */ (function () {
+    function API(baseUrl) {
+        var _this = this;
+        // 定义常量方法
+        this.Global = {
+            request: function (options) { return _this.requestInstance.instance.request(options); }
+        };
+        this.mockMode = true;
+        this.register = {
+            request: function () { },
+        };
+        this.BizDataSourceController = new bizDataSourceController_1.BizDataSourceController();
+        this.BizServiceCategroyController = new bizServiceCategroyController_1.BizServiceCategroyController();
+        this.BizServiceController = new bizServiceController_1.BizServiceController();
+        this.BizServiceMethodController = new bizServiceMethodController_1.BizServiceMethodController();
+        this.FormDesignController = new formDesignController_1.FormDesignController();
+        this.FormTemplateController = new formTemplateController_1.FormTemplateController();
+        this.LicenseController = new licenseController_1.LicenseController();
+        this.AppPackageController = new appPackageController_1.AppPackageController();
+        this.AppPermissionController = new appPermissionController_1.AppPermissionController();
+        this.BizRuleController = new bizRuleController_1.BizRuleController();
+        this.ModelFunTreeController = new modelFunTreeController_1.ModelFunTreeController();
+        this.BizMenuController = new bizMenuController_1.BizMenuController();
+        this.BizSchemaController = new bizSchemaController_1.BizSchemaController();
+        this.BizSchemaEventController = new bizSchemaEventController_1.BizSchemaEventController();
+        this.BizPropertyFormulaController = new bizPropertyFormulaController_1.BizPropertyFormulaController();
+        this.BizPropertyController = new bizPropertyController_1.BizPropertyController();
+        this.BizViewController = new bizViewController_1.BizViewController();
+        this.WorkflowDesignController = new workflowDesignController_1.WorkflowDesignController();
+        this.OrganizationController = new organizationController_1.OrganizationController();
+        this.DepartmentController = new departmentController_1.DepartmentController();
+        this.TagController = new tagController_1.TagController();
+        this.AdminUnitTreeController = new adminUnitTreeController_1.AdminUnitTreeController();
+        this.UserController = new userController_1.UserController();
+        this.UserBizController = new userBizController_1.UserBizController();
+        this.AdminController = new adminController_1.AdminController();
+        this.AdminRoleController = new adminRoleController_1.AdminRoleController();
+        this.AdvancedDataSourceController = new advancedDataSourceController_1.AdvancedDataSourceController();
+        this.ChartController = new chartController_1.ChartController();
+        this.DashboardController = new dashboardController_1.DashboardController();
+        this.ReportDataSourceController = new reportDataSourceController_1.ReportDataSourceController();
+        this.OlapController = new olapController_1.OlapController();
+        this.SchedulerController = new schedulerController_1.SchedulerController();
+        this.SysDictController = new sysDictController_1.SysDictController();
+        this.SysLogController = new sysLogController_1.SysLogController();
+        this.SysParamsController = new sysParamsController_1.SysParamsController();
+        this.SecurityClientController = new securityClientController_1.SecurityClientController();
+        this.LoginController = new loginController_1.LoginController();
+        this.DocumentFileController = new documentFileController_1.DocumentFileController();
+        this.ExcelController = new excelController_1.ExcelController();
+        this.AuthController = new authController_1.AuthController();
+        this.OrganizationOpenApi = new organizationOpenApi_1.OrganizationOpenApi();
+        this.FormRuntimeOpenApi = new formRuntimeOpenApi_1.FormRuntimeOpenApi();
+        this.InstanceRuntimeOpenApi = new instanceRuntimeOpenApi_1.InstanceRuntimeOpenApi();
+        this.WorkflowRuntimeOpenApi = new workflowRuntimeOpenApi_1.WorkflowRuntimeOpenApi();
+        this.WorkItemRuntimeOpenApi = new workItemRuntimeOpenApi_1.WorkItemRuntimeOpenApi();
+        this.AppController = new appController_1.AppController();
+        this.BizObjectController = new bizObjectController_1.BizObjectController();
+        this.FormCommentController = new formCommentController_1.FormCommentController();
+        this.PortalFormTemplateController = new portalFormTemplateController_1.PortalFormTemplateController();
+        this.JsSignController = new jsSignController_1.JsSignController();
+        this.MessageController = new messageController_1.MessageController();
+        this.PortalModelFunTreeController = new portalModelFunTreeController_1.PortalModelFunTreeController();
+        this.OlapRuntimeController = new olapRuntimeController_1.OlapRuntimeController();
+        this.ExternalController = new externalController_1.ExternalController();
+        this.FormRuntimeController = new formRuntimeController_1.FormRuntimeController();
+        this.InstanceRuntimeController = new instanceRuntimeController_1.InstanceRuntimeController();
+        this.WorkflowRuntimeController = new workflowRuntimeController_1.WorkflowRuntimeController();
+        this.WorkItemRuntimeController = new workItemRuntimeController_1.WorkItemRuntimeController();
+        this.BizServerInvokeController = new bizServerInvokeController_1.BizServerInvokeController();
+        this.PortalSysDictController = new portalSysDictController_1.PortalSysDictController();
+        this.PortalUnitController = new portalUnitController_1.PortalUnitController();
+        this.PortalUnitTreeController = new portalUnitTreeController_1.PortalUnitTreeController();
+        this.PortalUserBizController = new portalUserBizController_1.PortalUserBizController();
+        this.AppViewController = new appViewController_1.AppViewController();
+        this.WorkbenchController = new workbenchController_1.WorkbenchController();
+        this.QuickLinkController = new quickLinkController_1.QuickLinkController();
+        this.WorkflowDelegateController = new workflowDelegateController_1.WorkflowDelegateController();
+        this.ShortLinkController = new shortLinkController_1.ShortLinkController();
+        this.IdGeneratorController = new idGeneratorController_1.IdGeneratorController();
+        this.SecurityController = new securityController_1.SecurityController();
+        this.NotifyController = new notifyController_1.NotifyController();
+        this.requestInstance = new request_1.default(baseUrl);
+        this.addInterceptors = {
+            request: this.requestInstance.interceptors.request,
+            response: this.requestInstance.interceptors.response,
+        };
+    }
+    return API;
+}());
+exports.default = API;
+//# sourceMappingURL=index.js.map

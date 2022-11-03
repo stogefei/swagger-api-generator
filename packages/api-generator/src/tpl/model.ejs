@@ -1,0 +1,18 @@
+/* eslint-disable */
+<%apiData.Models
+  .filter(item => item.Name)
+  .forEach(m => { %>// <%= m.Description || '无' %>
+export interface <%= m.Name + (m.BaseModel?' extends '+m.BaseModel:'') %> {<% m.Properties.forEach( p => { %>
+  // <%= p.Description || '无' %>
+  <%= p.Name %>: <%- p.Type.TsType %>;
+<% }) %>}
+<% }) %>
+<%apiData.Enums.forEach( m => { %>// <%= m.Description || '无' %><%
+  let items = m.Items.map(p=>{
+    return '  '+p.Name +' = '+ p.Value
+  }).join(',\n');
+%>
+export enum <%= m.Name %> {
+<%= items %>
+}
+<%})%>

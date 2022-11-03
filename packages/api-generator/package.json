@@ -1,0 +1,26 @@
+{
+  "name": "api-generate",
+  "version": "2.0.0",
+  "description": "根据swagger文档生成typescript客户端调用代码",
+  "bin": {
+    "swag": "./bin/swag.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node src/bin/swag.js",
+    "release": "tsc && npm publish --registry",
+    "dev": "ts-node src/lib/run.ts run dev",
+    "dome": "ts-node ./dome/run.ts"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "def",
+    "bin"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "ejs": "^3.1.5",
+    "pinyin": "^2.9.1"
+  }
+}
