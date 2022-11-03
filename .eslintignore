@@ -1,0 +1,15 @@
+node_modules/
+*/**/node_modules/
+**/*.spec.*
+**/style/**/*
+theme/**/*
+*.html
+es/
+lib/
+_site/
+dist/
+package.json
+*/**/iconfont.js
+packages/api/src/base.ts
+yarn.lock
+packages/template/
