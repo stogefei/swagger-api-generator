@@ -4,9 +4,9 @@
 
 ##### Notice
 
-    1.swagger
-![例子](https://raw.githubusercontent.com/stogefei/swagger-api-generator/master/api-demo.gif)
-    2.详细使用见下面
+    1.swagger文档
+![例子](https://raw.githubusercontent.com/stogefei/swagger-api-generator/master/swagger.jpeg)
+    2.构建后使用方式
 ![例子](https://raw.githubusercontent.com/stogefei/swagger-api-generator/master/api-demo.gif)
     
 ##### Other
@@ -27,4 +27,4 @@
     2. 根据生成的文档 我们可以根据代码提示 调用方法 传入参数
 ##### End
     你可以下载下来 修改config的配置 构建自己的Api
-    如果对你有帮助 还望在git上点亮一下🌟🌟
+    如果对你有帮助 还望在git上点亮一下🌟🌟 https://github.com/stogefei/swagger-api-generator
