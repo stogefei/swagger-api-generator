@@ -8,6 +8,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stogefei/swagger-api-generator.git"
+  },
   "scripts": {
     "lint": "tslint  --project tsconfig.json -t codeFrame 'src/**/*.ts' 'test/**/*.ts'",
     "prebuild": "rimraf dist",
@@ -64,5 +68,6 @@
     "webpack": "^4.39.2",
     "webpack-dev-middleware": "^3.7.0",
     "webpack-hot-middleware": "^2.25.0"
-  }
+  },
+  "gitHead": "e9c0f7031eb1538962ee91c25fcbc09a0469ac26"
 }

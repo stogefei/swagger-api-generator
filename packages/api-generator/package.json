@@ -6,6 +6,10 @@
   "bin": {
     "swag": "./bin/swag.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stogefei/swagger-api-generator.git"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node src/bin/swag.js",

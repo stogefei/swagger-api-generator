@@ -10,6 +10,7 @@
     "build:core": "cd ./packages/api-swag-core && yarn run build",
     "build:doc": "cd ./packages/api-swag-core && yarn run build:doc"
   },
+  "license": "MIT",
   "author": "zhuaofei",
   "repository": {
     "type": "git",
