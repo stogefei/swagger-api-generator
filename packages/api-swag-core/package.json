@@ -1,6 +1,6 @@
 {
   "name": "api-swag-core",
-  "version": "2.0.1-alpha.0",
+  "version": "2.0.0",
   "description": "api生成工具",
   "license": "MIT",
   "main": "src/index.ts",
@@ -69,5 +69,5 @@
     "webpack-dev-middleware": "^3.7.0",
     "webpack-hot-middleware": "^2.25.0"
   },
-  "gitHead": "e9c0f7031eb1538962ee91c25fcbc09a0469ac26"
+  "gitHead": "621db69065b8c058c8b2c219ff1a7f568ef4bb7d"
 }
