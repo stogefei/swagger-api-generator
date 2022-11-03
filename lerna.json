@@ -6,7 +6,7 @@
   "command": {
     "publish": {
       "message": "ci(publish): lerna publish %s",
-      "registry": "https://www.npmjs.com/"
+      "registry": "https://registry.npmjs.org/"
     },
     "version": {
       "includeMergedTags": true,

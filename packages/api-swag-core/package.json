@@ -68,5 +68,5 @@
     "webpack-dev-middleware": "^3.7.0",
     "webpack-hot-middleware": "^2.25.0"
   },
-  "gitHead": "621db69065b8c058c8b2c219ff1a7f568ef4bb7d"
+  "gitHead": "e5f18309dba05fdfad65ada9a4421e55fbb15c39"
 }
