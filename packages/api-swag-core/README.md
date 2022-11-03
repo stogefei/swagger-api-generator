@@ -4,7 +4,8 @@
 
 ##### Notice
 
-    1.此工具目前只是使用部分
+    1.swagger
+![例子](https://raw.githubusercontent.com/stogefei/swagger-api-generator/master/api-demo.gif)
     2.详细使用见下面
 ![例子](https://raw.githubusercontent.com/stogefei/swagger-api-generator/master/api-demo.gif)
     
@@ -24,3 +25,6 @@
 
     1. 我们不需要再手动写定义接口的代码
     2. 根据生成的文档 我们可以根据代码提示 调用方法 传入参数
+##### End
+    你可以下载下来 修改config的配置 构建自己的Api
+    如果对你有帮助 还望在git上点亮一下🌟🌟

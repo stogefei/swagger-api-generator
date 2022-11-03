@@ -3857,6 +3857,11 @@ anymatch@~3.1.2:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
+api-swag-core@2.0.4-alpha.0:
+  version "2.0.4-alpha.0"
+  resolved "https://registry.yarnpkg.com/api-swag-core/-/api-swag-core-2.0.4-alpha.0.tgz#86e1678fe1dfa4d450b023363a4157e7f115e9f4"
+  integrity sha512-vjnttY6o/m20MZqglNFmzxF7Ed4kEec5Emfwire5i4QitY0FikTZXODsA+5haHFl4tNz6YusNJxXKkMZ+g/d9A==
+
 aproba@^1.0.3, aproba@^1.1.1, aproba@^1.1.2:
   version "1.2.0"
   resolved "https://registry.npmmirror.com/aproba/-/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
