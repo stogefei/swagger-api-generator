@@ -6,7 +6,7 @@
 
     1.此工具目前只是使用部分
     2.详细使用见下面
-![例子](https://raw.githubusercontent.com/stogefei/swagger-api-generator/master/api-demo.gif）
+![例子](https://raw.githubusercontent.com/stogefei/swagger-api-generator/master/api-demo.gif)
     
 ##### Other
 
