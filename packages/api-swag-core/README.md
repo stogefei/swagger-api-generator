@@ -6,9 +6,10 @@
 
     1.swagger文档
 ![例子](https://raw.githubusercontent.com/stogefei/swagger-api-generator/master/swagger.jpeg)
+
     2.构建后使用方式
 ![例子](https://raw.githubusercontent.com/stogefei/swagger-api-generator/master/api-demo.gif)
-    
+
 ##### Other
 
     通常前端要定义一大堆接口来进行调用
@@ -27,4 +28,5 @@
     2. 根据生成的文档 我们可以根据代码提示 调用方法 传入参数
 ##### End
     你可以下载下来 修改config的配置 构建自己的Api
-    如果对你有帮助 还望在git上点亮一下🌟🌟 https://github.com/stogefei/swagger-api-generator
+    如果对你有帮助 还望在git上点亮一下🌟🌟 
+[help]([链接地址](https://github.com/stogefei/swagger-api-generator))
