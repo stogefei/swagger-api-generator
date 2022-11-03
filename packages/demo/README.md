@@ -1,24 +1,6 @@
 # demo
 
-## Project setup
-```
-npm install
-```
+#### demo演示
+    import API from "api-swag-core";
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+    console.log(API, "API"); // 输出所有api
