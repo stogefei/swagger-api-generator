@@ -1,6 +1,6 @@
 {
   "name": "api-generate",
-  "version": "2.0.2",
+  "version": "2.0.0",
   "private": true,
   "description": "根据swagger文档生成typescript客户端调用代码",
   "bin": {
