@@ -25,8 +25,7 @@
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "semantic-release": "semantic-release",
     "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
-    "travis-deploy-once": "travis-deploy-once",
-    "pub": "sh release.sh"
+    "travis-deploy-once": "travis-deploy-once"
   },
   "devDependencies": {
     "@types/jasmine-ajax": "^3.3.0",
